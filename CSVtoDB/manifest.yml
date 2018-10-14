@@ -1,0 +1,6 @@
+---
+applications:
+- name: toDB
+  buildpack: python_buildpack
+  memory: 64MB
+  instances: 1
