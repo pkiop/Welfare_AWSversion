@@ -13,7 +13,12 @@ import os
 #         mysql_srv = vcap_services['Mysql-DB'][0]
 #         mysql_cred = mysql_srv['credentials']
 
-mysql_cred = { 'hostname' : 'korean.cv6hktv7u8ad.us-east-2.rds.amazonaws.com' , 'port' : 3306, 'username' : 'root', 'password' : '11111111','name' : 'tempdb'}
+mysql_cred = { 'hostname' : 'tempdb.cv6hktv7u8ad.us-east-2.rds.amazonaws.com' , 'port' : 3306, 'username' : 'root', 'password' : '11111111','name' : 'tempdb'}
+conn = pymysql.connect( host=mysql_cred['hostname'], port=int(mysql_cred['port']), user=mysql_cred['username'], passwd=mysql_cred['password'], db=mysql_cred['name'], charset='utf8')
+curs = conn.cursor()
+curs.execute('GRANT SELECT ON *.* TO \'my_new_user\'@\'%\'')
+curs.close()
+conn.close()
 
 
 app = Flask(__name__)
@@ -48,7 +53,7 @@ def health_all():
         try:
             conn = pymysql.connect( host=mysql_cred['hostname'], port=int(mysql_cred['port']), user=mysql_cred['username'], passwd=mysql_cred['password'], db=mysql_cred['name'], charset='utf8')
             curs = conn.cursor()
-            curs.execute("select * from temp")
+            curs.execute("select * from health")
             result = []
 
             #json 형식으로 만들기
