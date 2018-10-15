@@ -8,6 +8,8 @@
 
 2. 챗봇을 활용한 복지 정보 검색
 
+3. 복지 정보 신청 알람 서비스
+
 ## DATA
 * <a href="http://bokjiro.go.kr/nwel/bokjiroMain.do">복지로</a>
 * <a href="https://www.busan.go.kr/young/index">부산청년</a>
@@ -15,21 +17,24 @@
 * <a href="https://www.dongnae.go.kr/health/index.dongnae">보건소</a>
 * <a href="http://www.gukbi.com/">국비지원교육</a>
 
+## CONFIGURATION
 
-## SOFTWARE REQUIREMENTS
+### DIAGRAM
+<img src="./img/temp.png">config image</img>
 
-### FRONTEND
+### DETAIL
+#### FRONTEND
 * Android App
 
-### BACKEND
+#### BACKEND
 
-#### WEB SERVER
+##### WEB SERVER
 
-##### CHATBOT
+###### CHATBOT
 * NodeJS
 
-##### REST API
+###### REST API
 * Python Flask
 
-#### DATABASE
+##### DATABASE
 * AWS MySQL
