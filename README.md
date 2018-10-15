@@ -22,6 +22,7 @@
 ### DIAGRAM
 <img src="./img/temp.jpg" width="500"></img>
 
+--------
 ### DETAIL
 #### FRONTEND
 * Android App
