@@ -18,10 +18,10 @@
 ## CONFIGURATION
 
 <img src="./img/temp.jpg" width="500"></img>
-
+___
 ### FRONTEND
 * Android App
-
+___
 ### BACKEND
 
 #### WEB SERVER
