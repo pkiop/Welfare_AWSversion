@@ -20,7 +20,7 @@
 ## CONFIGURATION
 
 ### DIAGRAM
-<img src="./img/temp.jpg" width="200">config</img>
+<img src="./img/temp.jpg" width="300"></img>
 
 ### DETAIL
 #### FRONTEND
