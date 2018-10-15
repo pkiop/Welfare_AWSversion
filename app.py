@@ -5,13 +5,6 @@ import os
 
 #paas-ta DB 접속정보 받아와서 접속
 
-# if 'VCAP_SERVICES' in os.environ:
-#     print("do")
-#     vcap_services = json.loads(os.environ['VCAP_SERVICES'])
-#
-#     if 'Mysql-DB' in vcap_services:
-#         mysql_srv = vcap_services['Mysql-DB'][0]
-#         mysql_cred = mysql_srv['credentials']
 
 mysql_cred = { 'hostname' : 'tempdb.cv6hktv7u8ad.us-east-2.rds.amazonaws.com' , 'port' : 3306, 'username' : 'root', 'password' : '11111111','name' : 'tempdb'}
 conn = pymysql.connect( host=mysql_cred['hostname'], port=int(mysql_cred['port']), user=mysql_cred['username'], passwd=mysql_cred['password'], db=mysql_cred['name'], charset='utf8')
