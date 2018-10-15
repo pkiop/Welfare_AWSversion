@@ -19,23 +19,21 @@
 
 ## CONFIGURATION
 
-### DIAGRAM
 <img src="./img/temp.jpg" width="500"></img>
 
---------
-### DETAIL
-#### FRONTEND
+### FRONTEND
 * Android App
 
-#### BACKEND
+### BACKEND
 
-##### WEB SERVER
+#### WEB SERVER
 
-###### CHATBOT
+##### CHATBOT
+* Dialogflow  
 * NodeJS
 
-###### REST API
+##### REST API
 * Python Flask
 
-##### DATABASE
+#### DATABASE
 * AWS MySQL
