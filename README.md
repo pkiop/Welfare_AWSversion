@@ -17,14 +17,13 @@
 
 ### BACK END
 
-#### DATABASE
-
-* AWS MySQL
-
 #### WEB SERVER
 
-##### REST API
-* Python flask
-
 ##### CHATBOT
-* nodeJS
+* NodeJS
+
+##### REST API
+* Python Flask
+
+#### DATABASE
+* AWS MySQL
