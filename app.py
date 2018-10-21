@@ -975,7 +975,5 @@ def edu():
             print("error is ==> ", e)
     return "<h1>ERROR</h1>"
 
-
-
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port=8080, debug=False)
